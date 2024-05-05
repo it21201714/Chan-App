@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "nodemon backend/server.js",
-    "build": "npm install --prefix ./backend/nasa-app && npm run build  --prefix ./backend/nasa-app && npm install --prefix ./backend"
+    "build": "npm install --prefix ./backend/nasa-app && npm run build  --prefix ./backend/nasa-app && npm install"
   },
   "keywords": [],
   "author": "",
