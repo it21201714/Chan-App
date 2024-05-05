@@ -33,7 +33,7 @@ const Register = () => {
     }
 
     axios
-      .post("http://localhost:7000/api/users/register", {
+      .post("/api/users/register", {
         name,
         email,
         password,

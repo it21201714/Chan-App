@@ -51,6 +51,6 @@ exports.login = async (req, res) => {
     const token = user.generateAuthToken();
     res.status(200).json({ token, message: "Login successful" });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    res.status(500).json({ message: error.message + "Hello" });
   }
 };

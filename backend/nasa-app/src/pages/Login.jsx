@@ -22,7 +22,7 @@ const Login = () => {
 
     try {
       axios
-        .post("http://localhost:7000/api/users/login", {
+        .post("/api/users/login", {
           email,
           password,
         })
