@@ -34,7 +34,7 @@ const decodeToken = (token) => {
 const handleLogout = () => {
   try {
     localStorage.removeItem("token");
-    window.location.href = "/login";
+    window.location.href = "/";
   } catch (error) {
     console.error("Error during logout:", error);
     // Display an error message to the user or take appropriate action
@@ -65,7 +65,7 @@ export default function App() {
         </NavbarContent>
         <NavbarContent className="hidden sm:flex gap-7" justify="center">
           <NavbarItem>
-            <Link color="foreground" href="/">
+            <Link color="foreground" href="/home">
               <img src={image} alt="NASA" className="h-32 w-32 mt-2" />
             </Link>
           </NavbarItem>
